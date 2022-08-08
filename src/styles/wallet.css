@@ -1,0 +1,64 @@
+.container-wallet {
+  background-color: #fff;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-top: 10%;
+  padding: 20px 30px;
+  text-align: center;
+  width: 450px;
+}
+
+.wallet-form {
+  margin-bottom: 40px;
+  margin-top: 30px;
+}
+
+.wallet-form label, input, button {
+  display: block;
+  text-align: left;
+  width: 100%;
+}
+
+.wallet-form label {
+  font-size: .8rem;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.wallet-form input {
+  border: none;
+  box-sizing: border-box;
+  border-bottom: 2px solid #323232;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.wallet-form input:focus {
+  border-bottom: 2px solid #028509;
+}
+
+.wallet-form select {
+  border-bottom: 2px solid #323232;
+  height: 50px;
+  width: 100%;
+}
+
+.wallet-form button {
+  background-color: #028509;
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  height: 40px;
+  margin-top: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.wallet-form button:hover {
+  background-color: #1aa821;
+  transition: .5s;
+}

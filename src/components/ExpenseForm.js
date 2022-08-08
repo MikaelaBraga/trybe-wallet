@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { fetchApi, expenseApi } from '../actions';
 
+import '../styles/wallet.css';
+
 class ExpenseForm extends Component {
   constructor(props) {
     super(props);
@@ -143,7 +145,7 @@ class ExpenseForm extends Component {
 
   render() {
     return (
-      <form>
+      <form className="wallet-form">
         { this.renderValueInput() }
         { this.renderInputDescription() }
         { this.renderCurrencySelect() }

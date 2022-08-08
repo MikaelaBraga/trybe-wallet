@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { setEmailUser } from '../actions/index';
 
+import '../styles/login.css';
+
 class Login extends React.Component {
   constructor() {
     super();
@@ -47,8 +49,9 @@ class Login extends React.Component {
   render() {
     const { email, password, buttonDisabled } = this.state;
     return (
-      <div>
-        <form>
+      <div className="container-login">
+        <h1>Digital Wallet</h1>
+        <form className="form-login">
           <label htmlFor="input-email">
             <input
               type="email"
@@ -71,6 +74,7 @@ class Login extends React.Component {
           </label>
           <Link to="/carteira">
             <button
+              className="button-login"
               type="button"
               disabled={ buttonDisabled }
               onClick={ this.handleSubmitEmailToStore() }
